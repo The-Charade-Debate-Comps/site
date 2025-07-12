@@ -1,9 +1,14 @@
 ---
+// Imports
 import Layout from "../layouts/layout.astro";
+import { Image } from "astro:assets";
+
+import HeroBannerImage from "../assets/herobanner.jpg";
+import HeroBanner from "../components/hero-banner.astro";
 ---
 
 <html lang = "en">
     <Layout>
-        
+        <HeroBanner image_path={HeroBannerImage.src} text="PTCD" />
     </Layout>
 </html>
