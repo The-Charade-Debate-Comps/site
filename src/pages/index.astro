@@ -6,6 +6,7 @@ import { Image } from "astro:assets";
 // Images
 import HeroBannerImage from "../assets/herobanner.jpg";
 import HeroBanner from "../components/hero-banner.astro";
+import StockImg from "../assets/randomstockimg.jpg"
 
 // Components
 import Card1 from "../components/card1.astro";
@@ -14,19 +15,21 @@ import ImageDescription from "../components/imagedescription.astro";
 
 <html lang = "en">
     <Layout>
-        <HeroBanner image_path={HeroBannerImage.src} text="PTCD" />
+        <HeroBanner image_path={HeroBannerImage.src} />
         <ImageDescription>
             <div class="description">
                 <div class="text_wrapper">
                   <h2>
-                    A style of debate
+                    A style of debate like no other
                   </h2>
-                  <h1>like no other</h1>
                   <p>
-                    ...
+                    TCD is a debate where people combine debating with having fun 
+                    MORE YAP ABT TCD SOMEONE PLS FILL THIS IN
                   </p>
                 </div>
+                
               </div>
+              <img src={StockImg.src} />
         </ImageDescription>
     </Layout>
 </html>
