@@ -6,9 +6,10 @@ import { Image } from "astro:assets";
 ---
 
 <div class="container">
-  <img class="image" src={image_path} alt="Our banner."/>
+  <!-- <img class="image" src={image_path} alt="Our banner."/> -->
   <div class="text_container">
     <p>{text}</p>
+    
   </div>
   <!-- <div class="arrow_container"><img class="arrow" src={hero_arrow.src} /></div> -->
 </div>
@@ -24,6 +25,8 @@ import { Image } from "astro:assets";
     position: relative;
     top: 0;
     z-index: -1;
+    background: #c322a3;
+    background: linear-gradient(180deg, rgba(195, 34, 163, 1) 0%, rgba(167, 135, 230, 1) 100%);
   }
   .container .image {
     width: 100%;
@@ -50,21 +53,23 @@ import { Image } from "astro:assets";
   } */
   
   .text_container {
-    width: 100vw;
+    width: 80vw;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left:45%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    text-align: center;
+    text-align: left;
   }
   
   .text_container p {
-    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 800;
     font-style: normal;
     color: white;
-    font-size: 10em;
+    text-align:left;
+    font-size: 5em;
+    
   }
 
   /*MOBILE*/
