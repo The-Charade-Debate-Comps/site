@@ -6,7 +6,25 @@ import Card1 from "../components/card1.astro";
 <html>
     <body>
         <div class = "container">
-            <slot />
+             <slot />
+            <div class = "grid">
+            <Card1>
+                <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac pulvinar leo, a porttitor lorem. Nullam facilisis interdum mauris, eu vulputate justo rhoncus quis. Donec congue purus id finibus suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet justo fringilla, mattis ligula vel, dapibus nisl. Nulla sodales arcu ut arcu viverra mattis. Aliquam enim quam, viverra sit amet ligula vitae, mollis pharetra tortor. Ut augue enim, consectetur vitae tellus vitae, aliquet facilisis est. Praesent condimentum placerat aliquet.
+            </p>
+        </Card1>
+             <Card1>
+                <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac pulvinar leo, a porttitor lorem. Nullam facilisis interdum mauris, eu vulputate justo rhoncus quis. Donec congue purus id finibus suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet justo fringilla, mattis ligula vel, dapibus nisl. Nulla sodales arcu ut arcu viverra mattis. Aliquam enim quam, viverra sit amet ligula vitae, mollis pharetra tortor. Ut augue enim, consectetur vitae tellus vitae, aliquet facilisis est. Praesent condimentum placerat aliquet.
+            </p>
+        </Card1>
+            <Card1>
+                <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac pulvinar leo, a porttitor lorem. Nullam facilisis interdum mauris, eu vulputate justo rhoncus quis. Donec congue purus id finibus suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet justo fringilla, mattis ligula vel, dapibus nisl. Nulla sodales arcu ut arcu viverra mattis. Aliquam enim quam, viverra sit amet ligula vitae, mollis pharetra tortor. Ut augue enim, consectetur vitae tellus vitae, aliquet facilisis est. Praesent condimentum placerat aliquet.
+            </p>
+        </Card1>
+            </div>
+           
         </div>
     </body>
 </html>
@@ -22,5 +40,9 @@ import Card1 from "../components/card1.astro";
         text-align: center;
         font-size: 5em;
         font-weight: 1000;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 </style>
