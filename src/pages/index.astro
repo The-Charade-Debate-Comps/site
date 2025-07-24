@@ -12,6 +12,7 @@ import StockImg from "../assets/randomstockimg.jpg"
 import Card1 from "../components/card1.astro";
 import ImageDescription from "../components/imagedescription.astro";
 import StatsDescription from "../components/statsdescription.astro";
+import BarChart from "../components/barchart.astro";
 ---
 
 <html lang = "en">
@@ -34,7 +35,11 @@ import StatsDescription from "../components/statsdescription.astro";
                   </p>
                 </div>
               </div>
-              
+            <div class="stats_container">
+              <div class = "stats">
+                <BarChart />
+              </div>
+            </div>
         </StatsDescription>
     </Layout>
 </html>
