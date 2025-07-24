@@ -8,11 +8,28 @@ import { Image } from "astro:assets";
 <div class="container">
   <!-- <img class="image" src={image_path} alt="Our banner."/> -->
   <div class="text_container">
-    <p>{text}</p>
+    <p id="headertext">{text}</p>
     
   </div>
   <!-- <div class="arrow_container"><img class="arrow" src={hero_arrow.src} /></div> -->
 </div>
+
+<script>
+    var i = 0;
+    var headertext = document.getElementById("headertext");
+    var txt = headertext.innerHTML;
+    var time = 70; 
+    headertext.innerHTML = "";
+
+    function typeWriter() {
+      if (i < txt.length) {
+        headertext.innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, time);
+      }
+    }
+     document.addEventListener('DOMContentLoaded', function () { typeWriter() })
+</script>
 
 <style>
   .container {
