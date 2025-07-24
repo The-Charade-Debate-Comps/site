@@ -11,6 +11,7 @@ import StockImg from "../assets/randomstockimg.jpg"
 // Components
 import Card1 from "../components/card1.astro";
 import ImageDescription from "../components/imagedescription.astro";
+import StatsDescription from "../components/statsdescription.astro";
 ---
 
 <html lang = "en">
@@ -21,7 +22,7 @@ import ImageDescription from "../components/imagedescription.astro";
     </head>
     <Layout>
         <HeroBanner text="Meet TCD, a style of debate like no other."/>
-        <ImageDescription >
+        <StatsDescription >
             <div class="description">
                 <div class="text_wrapper">
                   <h2>
@@ -32,9 +33,8 @@ import ImageDescription from "../components/imagedescription.astro";
                     MORE YAP ABT TCD SOMEONE PLS FILL THIS IN
                   </p>
                 </div>
-                
               </div>
-              <img src={StockImg.src} />
-        </ImageDescription>
+              
+        </StatsDescription>
     </Layout>
 </html>
