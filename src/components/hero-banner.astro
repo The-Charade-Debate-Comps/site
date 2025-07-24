@@ -17,18 +17,23 @@ import { Image } from "astro:assets";
 <script>
     var i = 0;
     var headertext = document.getElementById("headertext");
-    var txt = headertext.innerHTML;
-    var time = 70; 
-    headertext.innerHTML = "";
-
-    function typeWriter() {
-      if (i < txt.length) {
-        headertext.innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, time);
-      }
+    if (headertext == null) {
     }
-     document.addEventListener('DOMContentLoaded', function () { typeWriter() })
+    else{
+      var txt = headertext.innerHTML;
+      var time = 70; 
+      headertext.innerHTML = "";
+
+      function typeWriter() {
+        if (i < txt.length) {
+          headertext.innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, time);
+        }
+      }
+      document.addEventListener('DOMContentLoaded', function () {typeWriter()})
+    }
+    
 </script>
 
 <style>
@@ -41,6 +46,7 @@ import { Image } from "astro:assets";
     justify-content: center;
     position: relative;
     top: 0;
+    left: 0;
     z-index: -1;
     background: #c322a3;
     background: linear-gradient(180deg, rgba(195, 34, 163, 1) 0%, rgba(167, 135, 230, 1) 100%);

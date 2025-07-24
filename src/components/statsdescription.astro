@@ -1,6 +1,5 @@
 ---
 // Code originally from https://github.com/youthacks/site and modified
-import BarChart from "./barchart.astro";
 ---
 
 <html>
@@ -28,7 +27,7 @@ import BarChart from "./barchart.astro";
       }
       .container :global(.stats) {
         display: flex;
-        justify-content: left;
+        justify-content:center;
       }
 
       .container :global(.stats .stats_container) {
@@ -36,7 +35,7 @@ import BarChart from "./barchart.astro";
         height: 70%;
         display: block;
 
-        align-self: left;
+        align-self: center;
 
         border-radius: 18px;
       }
@@ -47,12 +46,11 @@ import BarChart from "./barchart.astro";
         font-style: normal;
       }
 
-      .container :global(.stats .stats_container img) {
+      .container :global(.stats .stats_container) {
         width: 100%;
         height: 100%;
         display: flex;
         margin: auto;
-
         border-radius: 18px;
         object-fit: cover;
       }

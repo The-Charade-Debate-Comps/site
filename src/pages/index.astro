@@ -4,8 +4,6 @@ import Layout from "../layouts/layout.astro";
 import { Image } from "astro:assets";
 
 // Images
-import HeroBannerImage from "../assets/herobanner.jpg";
-import HeroBanner from "../components/hero-banner.astro";
 import StockImg from "../assets/randomstockimg.jpg"
 
 // Components
@@ -13,11 +11,13 @@ import Card1 from "../components/card1.astro";
 import ImageDescription from "../components/imagedescription.astro";
 import StatsDescription from "../components/statsdescription.astro";
 import BarChart from "../components/barchart.astro";
+import Statsdescription from "../components/statsdescription.astro";
+import Gallery from "../components/gallery.astro";
 ---
 
 <html lang = "en">
-    <Layout>
-        <HeroBanner text="Meet TCD, a style of debate like no other."/>
+  
+    <Layout text="Meet TCD, a style of debate like no other.">
         <StatsDescription >
             <div class="description">
                 <div class="text_wrapper">
@@ -29,11 +29,33 @@ import BarChart from "../components/barchart.astro";
                   </p>
                 </div>
               </div>
+            <div class = "stats">
             <div class="stats_container">
-              <div class = "stats">
                 <BarChart />
               </div>
             </div>
         </StatsDescription>
+        <Statsdescription>
+          <div class = "stats">
+            <div class="stats_container">
+                <BarChart />
+              </div>
+            </div>
+          <div class="description">
+                <div class="text_wrapper">
+                  <h2>
+                    But it's also high pressure, high stakes, and daunting for newbies
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac pulvinar leo, a porttitor lorem. Nullam facilisis interdum mauris, eu vulputate justo rhoncus quis. Donec congue purus id finibus suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet justo fringilla, mattis ligula vel, dapibus nisl. Nulla sodales arcu ut arcu viverra mattis. Aliquam enim quam, viverra sit amet ligula vitae, mollis pharetra tortor. Ut augue enim, consectetur vitae tellus vitae, aliquet facilisis est. Praesent condimentum placerat aliquet.
+                  </p>
+                </div>
+              </div>
+        </Statsdescription>
+        <Gallery>
+          <h1>
+            Meet TCD
+          </h1>
+        </Gallery>
     </Layout>
 </html>

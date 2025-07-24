@@ -1,0 +1,26 @@
+---
+import Card1 from "../components/card1.astro";
+---
+
+
+<html>
+    <body>
+        <div class = "container">
+            <slot />
+        </div>
+    </body>
+</html>
+
+<style>
+    .container {
+        justify-content: center;
+    }
+
+    .container :global(h1){
+        color: white;
+        font-family: "Lato", sans-serif;
+        text-align: center;
+        font-size: 5em;
+        font-weight: 1000;
+    }
+</style>
