@@ -14,13 +14,18 @@ import ImageDescription from "../components/imagedescription.astro";
 ---
 
 <html lang = "en">
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
     <Layout>
-        <HeroBanner image_path={HeroBannerImage.src} />
-        <ImageDescription>
+        <HeroBanner text="Meet TCD, a style of debate like no other."/>
+        <ImageDescription >
             <div class="description">
                 <div class="text_wrapper">
                   <h2>
-                    A style of debate like no other
+                    Debating. Is. Awesome.
                   </h2>
                   <p>
                     TCD is a debate where people combine debating with having fun 
@@ -29,7 +34,7 @@ import ImageDescription from "../components/imagedescription.astro";
                 </div>
                 
               </div>
-              <img src={StockImg.src} />
+              
         </ImageDescription>
     </Layout>
 </html>
