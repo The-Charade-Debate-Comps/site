@@ -1,0 +1,45 @@
+---
+---
+
+<div class = "barchart">
+  <canvas id="myChart"></canvas>
+</div>
+
+<style>
+  .barchart{
+  position: relative; 
+  width: inherit; 
+  /* background-color: white; */
+  height: inherit;
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const chartData = {
+      labels: ["Debated", "Not Debated"],
+      datasets: [{
+        label: '% that graduated',
+        data: [65, 48],
+        backgroundColor: '#ffffff',
+      }],
+    };
+
+    const chartOptions = {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          beginAtZero: true,
+        },
+      },
+    };
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
+      type: 'bar',
+      data: chartData,
+      options: chartOptions,
+    });
+  });
+</script>

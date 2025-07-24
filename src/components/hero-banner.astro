@@ -8,11 +8,33 @@ import { Image } from "astro:assets";
 <div class="container">
   <!-- <img class="image" src={image_path} alt="Our banner."/> -->
   <div class="text_container">
-    <p>{text}</p>
+    <p id="headertext">{text}</p>
     
   </div>
   <!-- <div class="arrow_container"><img class="arrow" src={hero_arrow.src} /></div> -->
 </div>
+
+<script>
+    var i = 0;
+    var headertext = document.getElementById("headertext");
+    if (headertext == null) {
+    }
+    else{
+      var txt = headertext.innerHTML;
+      var time = 70; 
+      headertext.innerHTML = "";
+
+      function typeWriter() {
+        if (i < txt.length) {
+          headertext.innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, time);
+        }
+      }
+      document.addEventListener('DOMContentLoaded', function () {typeWriter()})
+    }
+    
+</script>
 
 <style>
   .container {
@@ -24,6 +46,7 @@ import { Image } from "astro:assets";
     justify-content: center;
     position: relative;
     top: 0;
+    left: 0;
     z-index: -1;
     background: #c322a3;
     background: linear-gradient(180deg, rgba(195, 34, 163, 1) 0%, rgba(167, 135, 230, 1) 100%);
