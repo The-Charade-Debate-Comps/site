@@ -7,6 +7,7 @@ Our main site for the first ever TCD tournament
 -> Forum style debating, except the first speakers do not know the motion 
 -> 2nd and third speaker must charade it to them
 
-branch delana hosted on: https://github.com/The-Charade-Debate-Comps/site
+branch delana hosted on:
+the-charade-debate-comps.github.io/site
 
 Credits to https://github.com/youthacks/site for code components
