@@ -8,6 +8,6 @@ Our main site for the first ever TCD tournament
 -> 2nd and third speaker must charade it to them
 
 branch delana hosted on:
-the-charade-debate-comps.github.io/site
+https://the-charade-debate-comps.github.io/site
 
 Credits to https://github.com/youthacks/site for code components
